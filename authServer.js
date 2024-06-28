@@ -1,8 +1,29 @@
 require("dotenv").config();
 
+
+const mysql = require('mysql');
 const express = require("express");
 const app = express();
 const jwt = require("jsonwebtoken");
+
+
+// Configurer la connexion MySQL
+// const connection = mysql.createConnection({
+//   host: 'localhost',
+//   user: 'root',
+//   password: 'Aymen',
+//   database: 'listToken'  // Remplace avec le nom de ta base de données
+// });
+
+// // Se connecter à MySQL
+// connection.connect((err) => {
+//   if (err) {
+//     console.error('Erreur de connexion à MySQL : ', err.stack);
+//     return;
+//   }
+//   console.log('Connecté à MySQL en tant que ID : ', connection.threadId);
+// });
+
 
 app.use(express.json());
 
